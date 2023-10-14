@@ -3,6 +3,7 @@ package com.jorimi.packagetemplateplugin
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.command.WriteCommandAction
+import com.intellij.openapi.components.ServiceManager
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.Messages
 import com.intellij.psi.PsiDirectory
@@ -20,6 +21,7 @@ import com.intellij.psi.PsiManager
  * 10/13/23        Jihun Kim       최초 생성
  */
 class PackageGroupAction : AnAction() {
+
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val directory = getCurrentDirectory(e) ?: return
@@ -49,11 +51,15 @@ class PackageGroupAction : AnAction() {
     }
 
     private fun createDefaultSubPackages(directory: PsiDirectory, project: Project) {
+        // Settings로부터 사용자가 설정한 패키지 목록 가져오기
+        val settings = ServiceManager.getService(PackageConfigService::class.java)
+        val userDefinedSubPackages = settings.packageNames
+
         WriteCommandAction.runWriteCommandAction(project) {
-            val defaultSubPackages = listOf("controller", "domain", "enums", "exception", "service")
-            for (subPackage in defaultSubPackages) {
+            for (subPackage in userDefinedSubPackages) {
                 directory.createSubdirectory(subPackage)
             }
         }
     }
+
 }

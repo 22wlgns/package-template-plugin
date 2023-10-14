@@ -24,12 +24,16 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <applicationConfigurable parentId="BuildTools"
+                                 id="com.jorimi.packagetemplateplugin"
+                                 displayName="패키지 템플릿"
+                                 instance="com.jorimi.packagetemplateplugin.PackageConfigurable"/>
     </extensions>
     <actions>
-        <action id="package.template" class="com.jorimi.packagetemplateplugin.PackageGroupAction" text="패키지 템플릿" icon="AllIcons.Nodes.Package">
+        <action id="package.template" class="com.jorimi.packagetemplateplugin.PackageGroupAction" text="패키지 템플릿"
+                icon="AllIcons.Nodes.Package">
             <add-to-group group-id="NewGroup" anchor="after" relative-to-action="NewDir"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="meta EQUALS"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="contorl EQUALS"/>
         </action>
     </actions>
 </idea-plugin>
