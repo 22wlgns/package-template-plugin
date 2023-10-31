@@ -51,7 +51,7 @@ class PackageGroupAction : AnAction() {
     }
 
     private fun createDefaultSubPackages(directory: PsiDirectory, project: Project) {
-        // Settings로부터 사용자가 설정한 패키지 목록 가져오기
+
         val settings = ServiceManager.getService(PackageConfigService::class.java)
         val userDefinedSubPackages = settings.packageNames
 

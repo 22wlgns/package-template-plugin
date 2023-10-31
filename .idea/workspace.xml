@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b56e6383-bb2b-4cf9-bcc2-22365c2ac143" name="변경" comment="[init]">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/AddAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellRenderer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigurable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/RemoveAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b56e6383-bb2b-4cf9-bcc2-22365c2ac143" name="변경" comment="[feat] Add capabilities that can be modified in settings that are not specified packages">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellEditor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellRenderer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigurable.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageGroupAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageGroupAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +93,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.package-template-plugin [buildPlugin]">
+  <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="package-template-plugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -145,6 +141,9 @@
       <workItem from="1697180375719" duration="1894000" />
       <workItem from="1697191646349" duration="218000" />
       <workItem from="1697282940163" duration="10340000" />
+      <workItem from="1697310256173" duration="123000" />
+      <workItem from="1697417463579" duration="7000" />
+      <workItem from="1698745035802" duration="2965000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -154,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697179455892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feat] Add capabilities that can be modified in settings that are not specified packages">
+      <option name="closed" value="true" />
+      <created>1697310372106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697310372106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[init]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[init]" />
+    <MESSAGE value="[feat] Add capabilities that can be modified in settings that are not specified packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] Add capabilities that can be modified in settings that are not specified packages" />
   </component>
 </project>

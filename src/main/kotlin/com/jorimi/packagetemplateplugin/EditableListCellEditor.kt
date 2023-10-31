@@ -2,25 +2,30 @@ package com.jorimi.packagetemplateplugin
 
 import java.awt.Color
 import javax.swing.BorderFactory
-import javax.swing.table.DefaultTableCellRenderer
+import javax.swing.DefaultCellEditor
+import javax.swing.JTextField
 
 /**
  * packageName    : com.jorimi.packagetemplateplugin
- * fileName       : EditableListCellRenderer
+ * fileName       : EditableListCellEditor
  * author         : Jihun Kim
- * date           : 10/15/23
+ * date           : 10/31/23
  * description    :
  * ===========================================================
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
- * 10/15/23        Jihun Kim       최초 생성
+ * 10/31/23        Jihun Kim       최초 생성
  */
-class EditableListCellRenderer : DefaultTableCellRenderer() {
+class EditableListCellEditor : DefaultCellEditor(JTextField()) {
 
     private val borderColor = Color.decode("#323232")
 
     init {
-        border = BorderFactory.createLineBorder(borderColor)
+        (component as JTextField).border = BorderFactory.createLineBorder(borderColor)
+    }
+
+    override fun getCellEditorValue(): Any {
+        return (component as JTextField).text
     }
 
 }

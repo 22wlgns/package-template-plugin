@@ -19,7 +19,7 @@ import com.intellij.openapi.components.Storage
 @Service
 @State(
     name = "PackageSettings",
-    storages = [Storage("plugin.xml")]
+    storages = [Storage("~/.idea/myPluginSettings.xml")]
 )
 class PackageConfigService : PersistentStateComponent<PackageConfigService.State> {
 
@@ -35,7 +35,7 @@ class PackageConfigService : PersistentStateComponent<PackageConfigService.State
             state.packageNames = value
         }
 
-    override fun getState(): State? {
+    override fun getState(): State {
         return state
     }
 
