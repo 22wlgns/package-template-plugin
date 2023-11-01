@@ -33,7 +33,7 @@
         <action id="package.template" class="com.jorimi.packagetemplateplugin.PackageGroupAction" text="패키지 템플릿"
                 icon="AllIcons.Nodes.Package">
             <add-to-group group-id="NewGroup" anchor="after" relative-to-action="NewDir"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="contorl EQUALS"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control EQUALS"/>
         </action>
     </actions>
 </idea-plugin>

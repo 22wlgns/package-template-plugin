@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b56e6383-bb2b-4cf9-bcc2-22365c2ac143" name="변경" comment="[feat] Add capabilities that can be modified in settings that are not specified packages">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellEditor.kt" afterDir="false" />
+    <list default="true" id="b56e6383-bb2b-4cf9-bcc2-22365c2ac143" name="변경" comment="[feat] style 제외 완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/EditableListCellRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageConfigurable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageGroupAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/jorimi/packagetemplateplugin/PackageGroupAction.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jorimi.packagetemplateplugin&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -93,7 +88,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.package-template-plugin [buildPlugin]">
     <configuration name="package-template-plugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -143,7 +138,9 @@
       <workItem from="1697282940163" duration="10340000" />
       <workItem from="1697310256173" duration="123000" />
       <workItem from="1697417463579" duration="7000" />
-      <workItem from="1698745035802" duration="2965000" />
+      <workItem from="1698745035802" duration="3041000" />
+      <workItem from="1698748129325" duration="85000" />
+      <workItem from="1698800217998" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -161,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697310372106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[feat] style 제외 완성">
+      <option name="closed" value="true" />
+      <created>1698748071246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698748071246</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +175,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[init]" />
     <MESSAGE value="[feat] Add capabilities that can be modified in settings that are not specified packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] Add capabilities that can be modified in settings that are not specified packages" />
+    <MESSAGE value="[feat] style 제외 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] style 제외 완성" />
   </component>
 </project>
